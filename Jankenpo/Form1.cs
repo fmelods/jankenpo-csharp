@@ -45,13 +45,13 @@ namespace Jankenpo
             switch(jogador)
             {
                 case Opcoes.Pedra:
-                    imgEscolhaJogador.BackgroundImage = Image.FromFile("C:\\Users\\dell\\Documents\\imagens do jankenpo\\pedra.png");
+                    imgEscolhaJogador.BackgroundImage = Image.FromFile("E:\\pessoal\\projetos\\cs\\jankenpo-csharp\\Jankenpo\\Resources\\pedra.png");
                     break;
                 case Opcoes.Papel:
-                    imgEscolhaJogador.BackgroundImage = Image.FromFile("C:\\Users\\dell\\Documents\\imagens do jankenpo\\papel.png");
+                    imgEscolhaJogador.BackgroundImage = Image.FromFile("E:\\pessoal\\projetos\\cs\\jankenpo-csharp\\Jankenpo\\Resources\\papel.png");
                     break;
                 case Opcoes.Tesoura:
-                    imgEscolhaJogador.BackgroundImage = Image.FromFile("C:\\Users\\dell\\Documents\\imagens do jankenpo\\tesoura.png");
+                    imgEscolhaJogador.BackgroundImage = Image.FromFile("E:\\pessoal\\projetos\\cs\\jankenpo-csharp\\Jankenpo\\Resources\\tesoura.png");
                     break;
             }
         }
@@ -63,17 +63,17 @@ namespace Jankenpo
             if (numero == 1)
             {
                 cpu = Opcoes.Pedra;
-                imgEscolhaCPU.BackgroundImage = Image.FromFile("C:\\Users\\dell\\Documents\\imagens do jankenpo\\pedra.png");
+                imgEscolhaCPU.BackgroundImage = Image.FromFile("E:\\pessoal\\projetos\\cs\\jankenpo-csharp\\Jankenpo\\Resources\\pedra.png");
             }
             else if (numero == 2)
             {
                 cpu = Opcoes.Papel;
-                imgEscolhaCPU.BackgroundImage = Image.FromFile("C:\\Users\\dell\\Documents\\imagens do jankenpo\\papel.png");
+                imgEscolhaCPU.BackgroundImage = Image.FromFile("E:\\pessoal\\projetos\\cs\\jankenpo-csharp\\Jankenpo\\Resources\\papel.png");
             }
             else if (numero == 3)
             {
                 cpu = Opcoes.Tesoura;
-                imgEscolhaCPU.BackgroundImage = Image.FromFile("C:\\Users\\dell\\Documents\\imagens do jankenpo\\tesoura.png");
+                imgEscolhaCPU.BackgroundImage = Image.FromFile("E:\\pessoal\\projetos\\cs\\jankenpo-csharp\\Jankenpo\\Resources\\tesoura.png");
             }
         }
 

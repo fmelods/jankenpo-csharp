@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             splitContainer1 = new SplitContainer();
+            grupoPlacar = new GroupBox();
+            placarCPU = new Label();
+            placarJogador = new Label();
+            label2 = new Label();
+            label1 = new Label();
             groupBox2 = new GroupBox();
             imgEscolhaCPU = new PictureBox();
             groupBox1 = new GroupBox();
@@ -37,20 +41,15 @@
             botaoTesoura = new Button();
             botaoPapel = new Button();
             botaoPedra = new Button();
-            grupoPlacar = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            placarJogador = new Label();
-            placarCPU = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            grupoPlacar.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgEscolhaCPU).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)imgEscolhaJogador).BeginInit();
-            grupoPlacar.SuspendLayout();
             SuspendLayout();
             // 
             // splitContainer1
@@ -74,6 +73,59 @@
             splitContainer1.Size = new Size(624, 441);
             splitContainer1.SplitterDistance = 239;
             splitContainer1.TabIndex = 0;
+            // 
+            // grupoPlacar
+            // 
+            grupoPlacar.Controls.Add(placarCPU);
+            grupoPlacar.Controls.Add(placarJogador);
+            grupoPlacar.Controls.Add(label2);
+            grupoPlacar.Controls.Add(label1);
+            grupoPlacar.Location = new Point(213, 60);
+            grupoPlacar.Name = "grupoPlacar";
+            grupoPlacar.Size = new Size(200, 145);
+            grupoPlacar.TabIndex = 2;
+            grupoPlacar.TabStop = false;
+            grupoPlacar.Text = "Placar";
+            // 
+            // placarCPU
+            // 
+            placarCPU.AutoSize = true;
+            placarCPU.Font = new Font("Segoe UI", 30F);
+            placarCPU.Location = new Point(128, 54);
+            placarCPU.Name = "placarCPU";
+            placarCPU.Size = new Size(45, 54);
+            placarCPU.TabIndex = 3;
+            placarCPU.Text = "0";
+            // 
+            // placarJogador
+            // 
+            placarJogador.AutoSize = true;
+            placarJogador.Font = new Font("Segoe UI", 30F);
+            placarJogador.Location = new Point(30, 54);
+            placarJogador.Name = "placarJogador";
+            placarJogador.Size = new Size(45, 54);
+            placarJogador.TabIndex = 2;
+            placarJogador.Text = "0";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.Location = new Point(128, 19);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 21);
+            label2.TabIndex = 1;
+            label2.Text = "CPU";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(19, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Jogador";
             // 
             // groupBox2
             // 
@@ -115,7 +167,7 @@
             // 
             // botaoTesoura
             // 
-            botaoTesoura.BackgroundImage = (Image)resources.GetObject("botaoTesoura.BackgroundImage");
+            botaoTesoura.BackgroundImage = Properties.Resources.tesoura;
             botaoTesoura.BackgroundImageLayout = ImageLayout.Stretch;
             botaoTesoura.Dock = DockStyle.Left;
             botaoTesoura.Location = new Point(426, 0);
@@ -127,7 +179,7 @@
             // 
             // botaoPapel
             // 
-            botaoPapel.BackgroundImage = (Image)resources.GetObject("botaoPapel.BackgroundImage");
+            botaoPapel.BackgroundImage = Properties.Resources.papel;
             botaoPapel.BackgroundImageLayout = ImageLayout.Stretch;
             botaoPapel.Dock = DockStyle.Left;
             botaoPapel.Location = new Point(213, 0);
@@ -139,7 +191,7 @@
             // 
             // botaoPedra
             // 
-            botaoPedra.BackgroundImage = (Image)resources.GetObject("botaoPedra.BackgroundImage");
+            botaoPedra.BackgroundImage = Properties.Resources.pedra;
             botaoPedra.BackgroundImageLayout = ImageLayout.Stretch;
             botaoPedra.Dock = DockStyle.Left;
             botaoPedra.Location = new Point(0, 0);
@@ -148,59 +200,6 @@
             botaoPedra.TabIndex = 0;
             botaoPedra.UseVisualStyleBackColor = true;
             botaoPedra.Click += botaoPedra_Click;
-            // 
-            // grupoPlacar
-            // 
-            grupoPlacar.Controls.Add(placarCPU);
-            grupoPlacar.Controls.Add(placarJogador);
-            grupoPlacar.Controls.Add(label2);
-            grupoPlacar.Controls.Add(label1);
-            grupoPlacar.Location = new Point(213, 60);
-            grupoPlacar.Name = "grupoPlacar";
-            grupoPlacar.Size = new Size(200, 145);
-            grupoPlacar.TabIndex = 2;
-            grupoPlacar.TabStop = false;
-            grupoPlacar.Text = "Placar";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F);
-            label1.Location = new Point(19, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(66, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Jogador";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(128, 19);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 21);
-            label2.TabIndex = 1;
-            label2.Text = "CPU";
-            // 
-            // placarJogador
-            // 
-            placarJogador.AutoSize = true;
-            placarJogador.Font = new Font("Segoe UI", 30F);
-            placarJogador.Location = new Point(30, 54);
-            placarJogador.Name = "placarJogador";
-            placarJogador.Size = new Size(45, 54);
-            placarJogador.TabIndex = 2;
-            placarJogador.Text = "0";
-            // 
-            // placarCPU
-            // 
-            placarCPU.AutoSize = true;
-            placarCPU.Font = new Font("Segoe UI", 30F);
-            placarCPU.Location = new Point(128, 54);
-            placarCPU.Name = "placarCPU";
-            placarCPU.Size = new Size(45, 54);
-            placarCPU.TabIndex = 3;
-            placarCPU.Text = "0";
             // 
             // Form1
             // 
@@ -217,12 +216,12 @@
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            grupoPlacar.ResumeLayout(false);
+            grupoPlacar.PerformLayout();
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)imgEscolhaCPU).EndInit();
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)imgEscolhaJogador).EndInit();
-            grupoPlacar.ResumeLayout(false);
-            grupoPlacar.PerformLayout();
             ResumeLayout(false);
         }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jankenpo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8527c534c216160bbe725bdafb224b3c816e6d26")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jankenpo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jankenpo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
